@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <title>Scroll Web!</title>
+  </head>
+  <body 
+  style="position: relative"
+  data-bs-spy="scroll"
+  data-bse-target="#navbar-landingPage"
+  data-bs-offset="10"
+  tabindex="0">
+    <!-- navbar -->
+    <nav id="navbar-landingPage" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a
+          href=""
+          class="navbar-brand"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        >
+          <i class="bi bi-chevron-double-left"></i>
+          <span class="align-middle"> Ángel </span>
+          <i class="bi bi-chevron-double-right"></i>
+        </a>
+
+        <!-- creacion del menu de hamburguesa. toggler -->
+        <!-- se define el boton con sus tipos de atributos 
+        -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- creacion del boton del boton -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link active" aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- aria current = entrega accesibilidad al sitio web  -->
+              <a href="#proyectos" class="nav-link" aria-current="page"
+                >Proyectos</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#poesia" class="nav-link" aria-current="page"
+                >code poem</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#card" class="nav-link" aria-current="page"
+              >Información</a>>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <section id="inicio">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide mt-5"
+        data-bs-ride="carousel"
+      >
+        <!-- carusel con indicador y seleccionable -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/control.jpg" class="d-block w-100"  alt="..." />
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                "la vida es una aventura mientras tu sea el actor de tus
+                decisiones"
+              </h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/computer.jpg" class="d-block w-100" alt="..." />
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/observando.jpg" class="d-block w-100" alt="..." />
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                "Siempre observamos lo que nos preguntamos, en un instante de
+                tiempo"
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous </span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- slider -->
+
+    <!-- Proyectos -->
+    <main class="bg-dark text-white py-5" id="proyectos">
+      <div class="container">
+        <div class="text-center text-muted">
+          <i class="bi bi-folder2-open h4"></i>
+          <i class="bi bi-folder2-open h4"></i>
+          <i class="bi bi-folder2-open h4"></i>
+        </div>
+
+        <h2 class="text-center display-4 mb-5">Project</h2>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4">
+          <h5>Who is Angel?</h5>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+            fugit magni, laudantium quasi quibusdam quaerat, expedita dolore
+            ducimus iste libero temporibus, harum quam nisi eveniet doloremque
+            autem itaque exercitationem atque?
+          </p>
+          <button class="btn btn-outline-light mb-5 mb-lg-0">click</button>
+        </div>
+        <div class="col-12 col-lg-8 px-1">
+          <img src="img/FotoMoto (1).jpg" alt="" class="img-fluid rounded" />
+        </div>
+
+        <h1 class="p-5 display-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            labore tenetur est commodi necessitatibus rem incidunt eos
+            asperiores nihil sed enim eveniet, quia officiis, nulla saepe
+            dolorum facere tempore atque.
+          </p>
+        </h1>
+      </div>
+    </main>
+    <!-- Proyectos-->
+    <!-- Poemas -->
+    <section id="poesia" class="py-5 bg-light">
+      <div class="container">
+        <!-- iconos -->
+        <div class="text-center py-5 text-dark">
+          <i class="bi bi-pencil h3"></i>
+          <i class="bi bi-pencil h3"></i>
+          <i class="bi bi-pencil h3"></i>
+        </div>
+        <!-- titulo -->
+        <h2 class="text-center mb-5 display-4">Poesia</h2>
+
+        <p class="Lead mb-5 text-center">
+          Sobre el corazón la mano Me he puesto, por que no suene Su latido, y
+          de la noche Turbe la calma solemne. De tu balcon las persianas cerré
+          ya, para que no entre el resplandor enojoso De la aurora, y te
+          despierte... ¡Duerme!
+        </p>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+            <img src="img/fondo.jpg" alt="" class="img-fluid rounded" />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-8 col-xl-9">
+            <div class="accordion" id="listaDePoemas">
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="primerPoema">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expended="false"
+                    aria-controls="collapseOne"
+                  >
+                    firts poem
+                  </button>
+                </h5>
+                <div
+                  class="according-collapse collapse"
+                  id="collapseOne"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#contenedor-principal"
+                >
+                  <div class="according-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum perferendis odio ab distinctio nam dolore
+                      accusamus quibusdam temporibus rem earum dicta aperiam
+                      sapiente, officia veritatis, culpa ipsa voluptatem saepe
+                      hic!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- segundo poema -->
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="segundoPoema">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expended="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Second poem
+                  </button>
+                </h5>
+                <div
+                  class="according-collapse collapse"
+                  id="collapseTwo"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#contenedor-principal"
+                >
+                  <div class="according-body">
+                    <p>
+                      Te quiero, amor, amor absurdamente, tontalmente perdido,
+                      iluminado, soñando rosas e inventando estrellas y
+                      diciéndote adiós yendo a tu lado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Poemas -->
+    <section id="card" class="py-5 bg-secondary text-light">
+      <div class="container">
+        <div class="text-center text-muted">
+          <i class="bi bi-cpu h2">informacion</i>
+          <i class="bi bi-cpu h2">tecnologica</i>
+          <i class="bi bi-cpu h2">cultural</i>
+        </div>
+
+        <h2 class="text-center mb-5 text-white">Información cultural</h2>
+        <div class="row">
+          <p class="lead text-white pb-5 h3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In a optio
+            praesentium mollitia est quibusdam illum officia consectetur? Quia
+            animi ipsa quo ea harum laudantium exercitationem pariatur at atque
+            quis?
+          </p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                  src="https://www.ecestaticos.com/imagestatic/clipping/33f/63e/33f63e19986a652715de8c63ba3959f2/la-mision-que-quiere-llegar-a-marte-antes-que-spacex-arriesgandolo-todo.jpg?mtime=1649755466"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <div>
+                    <div class="accordion" id="contenedor-principal">
+                      <div class="accordion-item">
+                        <h2 class=" accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                            Phytom Space
+                          </button>
+                        </h2>
+
+                        <div
+                          class="accordion-collapse collapse"
+                          id="collapseOne"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#contenedor-principal"
+                        >
+                          <div class="according-body">
+                            <p class="text-dark">
+                              Una compañia con la visión de llegar a marte antes
+                              que Elong Musk, reduciendo costos mas de lo normal
+                              para un transbordador espacial, al eliminar los costos
+                              para transportar humanos, además de eliminar peso por
+                              parte del armazon.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- segundo card  -->
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card text-center" style="width: 18rem">
+              <img
+                src="https://noticias.coches.com/wp-content/uploads/2014/11/Inyecci%C3%B3n-directa-Bosch-650x469.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div>
+                  <div class="accordion" id="contenedor-secundario">
+                    <div class="accordion-item">
+                      <h2 class=" accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Sistema de inyeccion
+                        </button>
+                      </h2>
+
+                      <div
+                        class="accordion-collapse collapse"
+                        id="collapseTwo"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#contenedor-principal"
+                      >
+                        <div class="according-body">
+                          <p class="text-dark">
+                            El primer sistema de inyección electrónica 
+                            se comercializó en 1967, con el D-Jetroninc de Bosch. 
+                            A lo largo de los años, este lanzamiento supuso la culminación
+                            de los sistemas de inyección.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card " style="width: 18rem">
+                <img
+                  src="https://www.portalraizes.com/content/uploads/2016/02/WALT-EDITAVEL-1068x561.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <div>
+                    <div class="accordion" id="contenedor-terciario">
+                      <div class="accordion-item">
+                        <h2 class=" accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            Quién es Walt Whitman
+                          </button>
+                        </h2>
+  
+                        <div
+                          class="accordion-collapse collapse"
+                          id="collapseThree"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#contenedor-terciario"
+                        >
+                          <div class="according-body">
+                            <p class="text-dark">
+                              fue un poeta, enfermero voluntario, ensayista, 
+                              periodista y humanista estadounidense. 
+                              Su trabajo se inscribe en la transición entre 
+                              el trascendentalismo y el realismo filosófico, 
+                              incorporando ambos movimientos a su obra.                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+
+      
+      </div>
+    </section>
+<!-- footer  -->
+    <footer class="container-fluid bg-dark py-5 text-center text-light">
+      <p>
+        <i>Creado por Angel David Cantor Florez</i> 
+      </p>
+
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+
+-->
+  </body>
+</html>
+
+<!-- -->
+<!-- </div> -->
